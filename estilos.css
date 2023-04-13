@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Press+Start+2P&family=Rubik+Iso&display=swap');
+.titulo {
+   background-color: #11468F;
+    color: #EEEEEE;
+    font-family: 'Rubik Iso', cursive;
+    font-size: 50px;
+
+}
+
+p{
+    font-family: 'Anton', sans-serif;
+}
+
+h2{
+    font-family: 'Press Start 2P', cursive;
+    color: #EEEEEE;
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ataque{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.re{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mensajes{
+  background-color: #11468F;
+  width: 380px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tarjetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border: 2px dotted #eeeeee00;
+    box-sizing: border-box;
+
+}
+
+
+
+.tarjeta{
+    display: inline;
+    width: 140px;
+}
+
+.label-pak{
+    color: steelblue;
+    position: relative;
+    top: 70px;
+    left: 30px;
+    z-index: 1;
+    font-family: 'Anton', sans-serif;
+    display: flex;
+}
+
+.label-pak img {
+    width: 50px;
+   
+}
+
+input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+
+    width: 130px;
+    height: 100px;
+    background-color: #11468F;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 30px;
+  }
+
+  input[type="radio"]:focus-within {
+   
+    background-color: #EEEEEE;
+    
+  }
+
+  body{
+    background-color: #DA1212;
+
+  }
+  #boton-mascota{
+    font-family: 'Anton', sans-serif;
+    background-color: #041562;
+    color: #EEEEEE;
+    width: 200px;
+    height: 50px;
+    background-image: linear-gradient(red, blue);
+    border-radius: 20px;
+  }
+
+  #boton-fuego{
+    font-family: 'Anton', sans-serif;
+    background-color: #041562;
+    color: #EEEEEE;
+    background-image: linear-gradient(red, orange, yellow);
+    border-radius: 20px;
+    margin: 10px;
+  }
+
+  #boton-tierra{
+    font-family: 'Anton', sans-serif;
+    background-color: #041562;
+    color: #EEEEEE;
+    background-image: linear-gradient(green,rgb(0, 255, 0));
+    border-radius: 20px;
+    margin: 10px;
+  }
+
+  #boton-agua{
+    font-family: 'Anton', sans-serif;
+    background-color: #041562;
+    color: #EEEEEE;
+    background-image: linear-gradient(blue, rgb(0, 115, 255));
+    border-radius: 20px;
+    margin: 10px;
+  }
+
+   #vidas-jugador,#vidas-enemigo{
+
+    font-family: 'Press Start 2P', cursive;
+    color: #EEEEEE;
+    font-size: 30px;
+
+   }
+
+  #seleccionar-ataque{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+  #boton-reiniciar{
+    font-family: 'Anton', sans-serif;
+    background-color: grey;
+    color: #EEEEEE;
+    border-radius: 20px;
+  }
+
+.ataques{
+  display: grid;
+  grid-template-columns:100px 25px 100px;
+}
+
+input[type="radio"]:hover{
+
+  box-shadow: 8px 8px 10px 0 black;
+
+}
+
+button:hover{
+
+  box-shadow: 8px 8px 10px 0 black;
+
+}
+
+.jugador{
+  grid-column-start: 1;
+  background-color: #11468F;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 3px dashed black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.enemigo{
+  grid-column-start: 3;
+  background-color: #11468F;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 3px dashed black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 425px) {
+  .tarjetas {
+
+    flex-direction: column;
+
+  }
+  .titulo{
+    font-size: 40px;
+  }
+
+  .bottones{
+    flex-direction: column;
+  }
+}
+
+
